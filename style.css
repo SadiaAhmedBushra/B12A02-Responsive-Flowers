@@ -1,0 +1,171 @@
+/* Font style */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+/* Shared styles */
+
+.black-primary{
+    color: #252432;
+}
+
+.gray-primary{
+    color: #8987A1;
+}
+
+.orange-primary{
+    color: #E95A08;
+}
+
+
+/* Header styles */
+
+.navbar{
+    max-width: 1440px;
+    max-height: 71px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1rem;
+}
+
+.navbar-logo{
+    width: 135px;
+    height: 82px;
+}
+
+.menu-items a{
+    text-decoration: none;
+}
+
+.home{
+    font-weight: bold;
+}
+
+.menu-items{
+    max-width: 415px;
+    max-height: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+.banner{
+    max-width: 1140px;
+    max-height: 461px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.banner-image img{
+    max-width: 570px;
+    max-height: 335px;
+    margin-top: 206px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.banner-content{
+    margin-top: 162px;
+}
+
+
+
+
+
+
+/* Responsive Styles for Mobile Devices */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 1rem;
+
+        max-width: 361px;
+        height: 38px;
+        margin-top: 25px;
+        margin-bottom: 28px;
+}
+
+.logo{
+    width: 63px;
+    height: 38px;
+}
+
+/* .cart{
+    font-size: 1rem;
+} */
+
+    .home,
+    .shop,
+    .about-us{
+        display: none;
+}
+
+
+
+.banner{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+  .banner-image{
+    order: 1; 
+    width: 100%;
+  }
+
+  .banner-image img{
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .banner-content {
+    order: 2; 
+    margin-top: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .banner-title{
+    font-size: 1.5rem;
+  }
+
+  .banner-description{
+    font-size: 0.875rem;
+  }
+}
+
