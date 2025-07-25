@@ -34,7 +34,7 @@
     color: #E95A08;
 }
 .section-title{
-    font-size: 3.125rem;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
@@ -57,7 +57,7 @@
 /* Header styles */
 
 .navbar{
-    max-width: 1440px;
+    max-width: 1140px;
     max-height: 71px;
     margin: 0 auto;
     margin-bottom: 120px;
@@ -127,6 +127,7 @@
 .plants-section{
     max-width: 1140px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .plants-section-header{
@@ -137,7 +138,7 @@
 .card{
     width: 270px;
     height: 484px;
-    padding: 30px 20pxJ;
+    padding: 30px 7px;
     
 }
 .card-name{
@@ -164,11 +165,138 @@
 }
 
 
+/* Plants Lover Section Styles */
+
+.plants-lover-section{
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-top: 170px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    position: relative;
+
+}
+
+.left-content{
+    position: relative;
+}
+        
+
+.left-content img{
+    width: 540px;
+    height: 597px;
 
 
+    display: block;
+}
+
+.right-content{
+    width: 550px;
+    height: 521px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+
+}
+
+.right-content h2{
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.right-content ul li{
+    padding-bottom: 20px;
+}
+
+#badge{
+    height: 286px;
+    width: 286px;
+
+    position: absolute;
+    top: -128px;
+    right: -90px;
+    z-index: 1;
+
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
+    animation: spin 2s linear infinite;
+}
 
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+.latest-deal-section{
+  display: none;
+}
+
+/* Join Section Styles */
+
+.join-section{
+  margin-top: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  background-image: url('assets/news-letter-bg.png');
+  width: 1440px;
+  height: 533px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  
+}
+
+.email-input{
+   border: none;
+    width: 270px;
+    height: 50px;
+    
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.join-section-header h2{
+  color: white;
+}
+
+.join-section-content{
+  width: 850px;
+  height: 50px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.join-section-content button{
+  width: 185px;
+  height: 52px;
+  margin-left: -4px;
+}
+
+.join-section-header{
+  width: 586;
+  height: 68px;
+}
+
+.email-input{
+  width: 644px;
+}
 
 
 
@@ -204,7 +332,6 @@
 }
 
 
-
 .banner{
     margin-top: 0px;
     display: flex;
@@ -237,5 +364,108 @@
   .banner-description{
     font-size: 0.875rem;
   }
+
+  .plants-section{
+    max-width: 393px;
+  }
+  .plants-section-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title{
+    font-size: 1.5rem;
+  }
+
+  .section-description{
+    font-size: 0.875rem;
+  }
+
+    .plants-section-header{
+    width: 393px;
+    margin-bottom: 16px;
+  }
+  .plants-section-header p{
+    width: 336px;
+    margin: 0 auto;
+  }
+  .plants-section-cards{
+    height: 1105px;
+    max-width: 393px;
+    margin: 0 auto;
+  }
+
+  .card{
+    max-width: 171px;
+    height: 340px;
+    padding: 10px 10px;
+  }
+
+  .card img{
+    width: 100%;
+    height: 196.5px;
+  }
+  .card-name{
+    font-size: 1rem;
+  }
+  .card-price{
+    font-size: 1rem;
+  }
+
+  .btn-primary{
+    background-color: #E95A08;
+    border: none;
+    width: 171px;
+    height: 50px;
+    
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#badge{
+  display: none;
+}
+
+.plants-lover-section{
+  flex-direction: column;
+  margin-top: 420px;
+  width: 361px;
+  height: 648px;
+  
+}
+
+.left-content{
+  width: 100%;
+  max-width: 358px;
+  height: 396px;
+}
+
+.left-content img{
+  width: 100%;
+  height: 396px;
+  display: block;
+}
+
+.right-content{
+    width: 361px;
+    height: 234px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 38px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.right-content h2{
+  font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.right-content ul li{
+    padding-bottom: 20px;
+    font-size: 0.875rem;
+}
+
 }
 
